@@ -181,4 +181,4 @@ export const materialTealTheme = {
   headerColor: "#E1E2E1",
 };
 
-export const chosenTheme = blueTheme;
+export const chosenTheme = blackTheme;
