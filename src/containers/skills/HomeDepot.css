@@ -1,0 +1,151 @@
+.muide-main-div {
+  display: flexbox;
+  flex-wrap: wrap;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.muide-main-div > * {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.muide-column-div {
+  display: flex;
+  overflow: hidden;
+}
+
+.muide-column-div > * {
+  flex: 1;
+}
+
+.muide-image-div > * {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .muide-main-div {
+    flex-direction: row;
+  }
+
+  .muide-column-div {
+    flex-direction: column;
+  }
+  .muide-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .muide-text {
+    font-size: 16px;
+  }
+  .muide-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .muide-image-div {
+    /* display: none; */
+    order: 2;
+  }
+
+  .muide-image-div > * {
+    margin-top: 0px;
+  }
+}
+
+.muide-text {
+  font-size: 20px;
+}
+
+.muide-text-div {
+  font-family: "Google Sans Regular";
+  padding: 0 126px;
+}
+
+.muide-heading {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Google Sans Regular";
+  line-height: normal;
+  margin-bottom: -10px;
+}
+
+.hd-small-heading {
+  font-family: "Google Sans Regular";
+  line-height: normal;
+  color: #cb4814;
+}
+
+.muide-process-div {
+  text-align: left;
+  font-weight: bold;
+}
+
+.muide-group-div {
+  margin-bottom: 50px;
+}
+
+.resize {
+  height: auto;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+}
+
+.muide-small-texts h4,
+.muide-small-texts p {
+  display: inline-block;
+}
+
+.home-depot-img {
+  max-width: 100%;
+}
+
+.box {
+  height: 260px;
+  max-width: 100%;
+}
+.box .rectangle {
+  background-color: #cb48144c;
+  height: 200px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  margin-top: 1%;
+}
+
+.frame .text-wrapper {
+  color: #000000;
+  font-family: "Noto Sans-DisplayBold", Helvetica;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame .group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}

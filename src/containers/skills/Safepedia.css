@@ -1,0 +1,88 @@
+.safepedia-main-div {
+  display: flexbox;
+  flex-wrap: wrap;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.safepedia-main-div > * {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.safepedia-column-div {
+  display: flex;
+  overflow: hidden;
+  margin-left: 50px;
+  padding: 0 76px;
+  margin-top: -90px;
+}
+
+.safepedia-column-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.safepedia-image-div > * {
+  max-width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .safepedia-main-div {
+    flex-direction: row;
+  }
+
+  .safepedia-column-div {
+    flex-direction: column;
+  }
+  .safepedia-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .safepedia-text {
+    font-size: 16px;
+  }
+  .safepedia-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .safepedia-image-div {
+    /* display: none; */
+    order: 2;
+  }
+
+  .safepedia-image-div > * {
+    margin-top: 0px;
+  }
+}
+
+.safepedia-text {
+  font-size: 20px;
+}
+
+.safepedia-text-div {
+  margin-left: 50px;
+  font-family: "Google Sans Regular";
+  padding: 0 76px;
+}
+
+.safepedia-heading {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Google Sans Regular";
+  line-height: normal;
+  margin-bottom: -10px;
+}
+
+.safepedia-small-heading {
+  font-family: "Google Sans Regular";
+  line-height: normal;
+}
+
+.safepedia-process-div {
+  text-align: left;
+  font-weight: bold;
+}

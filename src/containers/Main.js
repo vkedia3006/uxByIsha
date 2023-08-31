@@ -6,12 +6,17 @@ import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import Safepedia from "./skills/Safepedia";
+import Muide from "./skills/Muide";
+import HomeDepot from "./skills/HomeDepot";
+import ScrollToTop from "./ScrollToTop";
 
 export default class Main extends Component {
   render() {
     return (
       <div>
         <HashRouter basename="/">
+          <ScrollToTop />
           <Switch>
             <Route
               path="/"
@@ -54,12 +59,23 @@ export default class Main extends Component {
               )}
             />
             <Route
-              path="/projects/:projectName"
+              path="/safepedia"
               render={(props) => (
-                <Projects {...props} theme={this.props.theme} />
+                <Safepedia {...props} theme={this.props.theme} />
+              )}
+            />
+            <Route
+              path="/muide"
+              render={(props) => <Muide {...props} theme={this.props.theme} />}
+            />
+            <Route
+              path="/homedepot"
+              render={(props) => (
+                <HomeDepot {...props} theme={this.props.theme} />
               )}
             />
           </Switch>
+          {/* </ScrollToTop> */}
         </HashRouter>
       </div>
     );
